@@ -1,0 +1,164 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+.header {
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(253, 253, 253));
+}
+.navbar {
+     display: flex;
+     align-items: center;
+     padding: 20px;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul {
+    display: inline-block;
+    font-size: medium;
+    list-style-type: none;
+    font-family: 'Times New Roman', Times, serif;
+    justify-content: space-between;
+}
+nav ul li {
+    display: inline-block;
+    
+    margin-right: 20px;
+}
+nav ul li a {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    padding: 15px 15px 15px;
+    background:  #008CBA;
+    color: rgb(255, 255, 255);
+    border-radius: 20px;
+    transition: 0.5s;
+}
+nav ul li a:hover {
+    box-shadow: 5px 5px 5px black;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+.inputbox {
+    width: auto;
+    height: 60%;
+    position: relative;
+    left: 400px;
+
+}
+.button {
+    border: none;
+    color: white;
+    padding: 5px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 9px 10px;
+    cursor: pointer;
+    margin-left: 15px;
+    transition-duration: 0.5s;
+   transition-timing-function: ease;
+   transition-delay: 0s;
+
+}
+
+
+.button1 {background-color: #4CAF50;} 
+.button2 {background-color: #008CBA;}
+.button3 {background-color: #4CAF50;}
+.button4 {background-color: #008CBA;}
+.button5 {background-color: #4CAF50;} 
+.button6 {background-color: #008CBA;}
+.button7 {background-color: #4CAF50;}
+.button8 {background-color: #008CBA;}
+.button9 {background-color: #4CAF50;} 
+.button10 {background-color: #008CBA;}
+
+.button:hover {
+    transform: translateY(-5px);
+    box-shadow: 5px 7px 20px  rgb(0, 72, 255);
+}
+
+.rest p{
+    position: relative;
+    margin-left: 100px
+}
+@media only screen and (max-width: 800px) {
+    .contactus {
+        display: none;
+    }
+    .input {
+        position: relative;
+        left:10px;
+        display: flex;
+         width: 650px;
+        flex-basis: 70%;
+    }
+    .button {
+        flex-basis: 80%;
+        max-width: 650px;
+    }
+    
+}
+@media only screen and (max-width: 768px) {
+    .contactus {
+        display: none;
+    }
+    .input {
+        
+        display: flex;
+         width: 500px;
+        flex-basis: 80%;
+    }
+    .button {
+        flex-basis: 80%;
+        max-width: 500px;
+    }
+    nav ul li a {
+        display: flex;
+
+    }
+    
+}
+
+@media only screen and (max-width: 480px){
+    .contactus {
+        display: none;
+    }
+    .input {
+         width: 350px;
+    }
+    .button {
+       margin-left: 30px;
+        max-width: 350px;
+        flex-basis: 60%;
+    }
+}
+@media only screen and (max-width: 400px){
+    nav ul li a {
+        display: flex;
+        width: 120px;
+       
+    }
+    .logo img {
+        width: 155px;
+    }
+    .contactus{
+        display: none;
+    }
+    .input {
+         width: 350px;
+    }
+    .button {
+       margin-left: 30px;
+        max-width: 250px;
+        flex-basis: 60%;
+    }
+}
+
+
+
